@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html class="no-js" lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <title>Ordenar CD</title>
+</head>
+<body>
+
+	<select id="filtroNivel">
+		<option value="">Selecione</option>										 
+		<option value="Analista">Analista</option>										 
+		<option value="Consultor">Consultor</option>
+		<option value="Agricultor">Agricultor</option>
+	</select>
+
+	<select id="filtroOrdenar">
+		<option value="">Selecione</option>
+		<option value="a">Ascendete</option>
+		<option value="d">Descendente</option>
+	</select>
+
+	<ul class="list-vagas">
+		<li class="active" data-nivel="Consultor,Analista," data-datavaga="25092018">
+			<h2><span>Porto Alegre - RS</span>Consultor - Analista 25092018</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+		</li>
+		<li class="active" data-nivel="Consultor,Agricultor," data-datavaga="30092018">
+			<h2><span>Porto Alegre - RS</span>Consultor - Agricultor 30092018</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+		</li>
+		<li class="active" data-nivel="Agricultor" data-datavaga="20092018">
+			<h2><span>Porto Alegre - RS</span>Agricultor 20092018</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+		</li>
+		<li class="active" data-nivel="Gerente,Diretor," data-datavaga="04092018">
+			<h2><span>Porto Alegre - RS</span>Gerente - Diretor 04092018</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+		</li>
+	</ul>
+	
+	<div id="resultSearchList" style="display: none">Nenhuma vaga foi encontrada.</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="ordenar-cd.js"></script>
+
+</body>
+</html>
